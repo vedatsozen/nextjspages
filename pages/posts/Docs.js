@@ -1,0 +1,29 @@
+
+import Link from 'next/link';
+import Image from 'next/image'
+
+
+export default function Docs() {
+  return (
+    <div>
+       <div id="nav">
+
+<ul>
+<li><Link href="/">Home</Link></li>
+<li><Link href="/posts/Docs">Documentation</Link></li>
+<li><Link href="/posts/Learn">Learn</Link></li>
+<li><Link href="/posts/Tutorials">Tutorials</Link></li>
+<li><Link href="/posts/Contact">Contact</Link></li>
+</ul>
+
+    </div>
+      <h1 className='first'>Documentation Page</h1>
+      <h4 className='second'>Welcome to Documentation Page</h4>
+
+      <Image src="/images/docs.png" height="200px" width="200px" alt="Docs" />
+
+      <Link className="pages" href="/">Go to home page</Link>
+
+    </div>
+  );
+}
